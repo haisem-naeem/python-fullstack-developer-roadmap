@@ -497,10 +497,10 @@ Python File Handling and Error Handling
         def __init__(self, message):             
             self.message = message
 
-        try:         
-            raise CustomError("This is a custom error.")     
-        except CustomError as ce:         
-            print(f"Custom error caught: {ce.message}")
+    try:         
+        raise CustomError("This is a custom error.")     
+    except CustomError as ce:         
+        print(f"Custom error caught: {ce.message}")
 ```
 
 ### Raising Custom Exception
@@ -510,7 +510,7 @@ Python File Handling and Error Handling
     def validate_input(value):         
         if not isinstance(value, int):             
             raise ValueError("Input must be an integer.")      
-            
+
     try:         
         validate_input("invalid")     
     except ValueError as ve:         
